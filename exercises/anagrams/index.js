@@ -29,14 +29,7 @@ module.exports = anagrams;
 //--------------------------------------------------------------------
 /*
 function anagrams(stringA, stringB) {
-  const cleanA = strCleanUp(stringA)
-  const cleanB = strCleanUp(stringB)
-
-  if (cleanA === cleanB) {
-    return true
-  }
-
-  return false;
+  return strCleanUp(stringA) === strCleanUp(stringB)
 }
 
 //helper function
