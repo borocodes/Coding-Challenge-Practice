@@ -8,6 +8,15 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {}
+//my solution: convert strings into arrays, sort, and join back together as a string. Then, compare the sorted strings and return true. Otherwise, return false.
+function anagrams(stringA, stringB) {
+  let arrayA = stringA.split('').sort().join('');
+  let arrayB = stringB.split('').sort().join('');
+
+  if (arrayA === arrayB) {
+    return true;
+  }
+  return false;
+}
 
 module.exports = anagrams;
